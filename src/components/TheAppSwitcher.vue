@@ -56,11 +56,20 @@ export default {
   .settings {
     grid-area: settings;
     .settings-link {
+      border: 1px solid transparent;
+      border-radius: $border-radius;
+      height: 2.5rem;
+      width: 2.5rem;
+      line-height: 2.5rem;
+      display: block;
+      text-align: center;
+      transition: border $transition-time;
       svg {
         transition: fill $transition-time;
         fill: $secondary;
       }
       &:hover {
+        border: 1px solid $neutral_2;
         svg {
           fill: $primary;
         }
