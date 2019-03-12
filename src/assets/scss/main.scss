@@ -1,6 +1,6 @@
 @import 'partials/variables';
 @import 'partials/type';
-@import 'partials/inputs';
+@import 'partials/form';
 @import 'partials/buttons';
 @import 'partials/cards';
 @import 'partials/messages';
@@ -14,7 +14,7 @@ html {font-size: 16px;}
 
 body {
   font-family: $font;
-  line-height: 1.45;
+  line-height: $line-height;
   margin: 0;
   padding: 0;
 }
