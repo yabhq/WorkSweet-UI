@@ -107,10 +107,11 @@
             <div class="form-group">
               <label
                 class="form-item">
-                Name
-                <input
-                  type="text"
-                  placeholder="i.e John Doe">
+                Country
+                <BaseSelect
+                  placeholder="Select your Country"
+                  v-model="country"
+                  :options="options" />
               </label>
               <label
                 class="form-item">
@@ -136,8 +137,25 @@
 </template>
 
 <script>
-export default {
+import BaseSelect from '@/components/BaseSelect.vue';
 
+export default {
+  components: {
+    BaseSelect,
+  },
+  data: () => ({
+    country: 4,
+    options: [
+      {
+        value: 1,
+        label: 'France',
+      },
+      {
+        value: 2,
+        label: 'Canada',
+      },
+    ],
+  }),
 };
 </script>
 

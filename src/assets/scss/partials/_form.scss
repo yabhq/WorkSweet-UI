@@ -43,9 +43,14 @@
   textarea, 
   select {
     @extend %item-base;
+    -moz-appearance: none;
+    -webkit-appearance: none;
   }
   textarea {
     padding-top: 0.6rem;
     min-height: 120px;
+  }
+  select {
+    background: none;
   }
 }
