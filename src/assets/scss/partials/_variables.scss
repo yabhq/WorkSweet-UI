@@ -6,10 +6,10 @@
  $tertiary: #E22D5D;
  
  $neutral_1: #FCFDFF;
- $neutral_2: #9DA6BE;
+ $neutral_2: #EBEDF2;
  $neutral_3: #D7DCE6;
- $neutral_4: #B3BDD1;
- $neutral_5: #454545;
+ $neutral_4: #969CA9;
+ $neutral_5: #1D2333;
  
  $white: #FFF;
  $black: $neutral_5;
@@ -43,5 +43,6 @@
 /* 
  *  Misc 
  */
-$border-radius: 6px;
-$transition-time: 0.3s;
+ $border-radius: 6px;
+ $transition-time: 0.3s;
+ $box-shadow: 0 0 2px #b8beca;
