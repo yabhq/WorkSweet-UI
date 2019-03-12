@@ -34,18 +34,19 @@ export default {
 
 <style lang="scss" scoped>
 .app-switcher {
-  position: fixed;
-  width: 100px;
+  border-right: 1px solid  $neutral_2;
   background: $white;
   display: grid;
-  grid-column: 1;
-  grid-template-rows: auto 4rem;
   grid-template-areas:
     'nav'
     'settings';
+  grid-column: 1;
+  grid-template-rows: auto 4rem;
   height: 100vh;
   justify-items: center;
   padding: 1.5rem 0;
+  position: fixed;
+  width: 100px;
   .main-nav {
     grid-area: nav;
     .nav-link {
