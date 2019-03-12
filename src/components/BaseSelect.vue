@@ -69,7 +69,7 @@ export default {
   border: 1px solid $neutral_3;
   border-radius: $border-radius;
   display: block;
-  height: 40px;
+  height: 42px;
   font: 500 0.9rem / #{$line-height} #{$font};
   position: relative;
   margin-top: 0.4rem;
