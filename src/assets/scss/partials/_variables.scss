@@ -1,0 +1,46 @@
+/* 
+ *  Colors 
+ */
+ $primary: #3C6FED;
+ $secondary: #0B0E32;
+ $tertiary: #E22D5D;
+ 
+ $neutral_1: #FCFDFF;
+ $neutral_2: #9DA6BE;
+ $neutral_3: #D7DCE6;
+ $neutral_4: #B3BDD1;
+ $neutral_5: #454545;
+ 
+ $white: #FFF;
+ $black: $neutral_5;
+ 
+ $error: #E20046;
+ $success: #1CC181;
+ $warning: #FF9359;
+ 
+/* 
+ *  Breakpoints 
+ */
+ $mobile: 480px;
+ $tablet: 768px;
+ $desktop: 980px;
+
+/* 
+ *  Grid 
+ */
+ $spacing: 1rem;
+ $grid-cols: 12;
+ $container-width: $desktop;
+ $sm-container-width: $tablet;
+
+/* 
+ *  Font 
+ */
+ @import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+ $font: 'Muli', sans-serif;
+
+/* 
+ *  Misc 
+ */
+$border-radius: 6px;
+$transition-time: 0.3s;
