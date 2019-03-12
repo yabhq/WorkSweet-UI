@@ -110,7 +110,6 @@
                 Country
                 <BaseSelect
                   placeholder="Select your Country"
-                  v-model="country"
                   :options="options" />
               </label>
               <label
