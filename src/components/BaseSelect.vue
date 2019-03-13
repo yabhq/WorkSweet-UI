@@ -107,19 +107,9 @@ export default {
     }
 
   }
-  .select_list {
-    .item {
+  .dropdown-list {
+    .list-item {
       padding: 0.5rem 1rem;
-      transition: background $transition-time;
-      &:first-child {
-        border-radius: $border-radius $border-radius 0 0;
-      }
-      &:last-child {
-        border-radius: 0 0 $border-radius $border-radius;
-      }
-      &:hover {
-        background: $neutral_2;
-      }
     }
   }
 }
