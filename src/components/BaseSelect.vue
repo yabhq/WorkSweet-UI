@@ -7,22 +7,27 @@
       class="current">
       {{ selectedLabel }}
     </div>
-    <ul
-      :class="{active: optionsToggled}"
-      class="select_list">
-      <li
-        v-for="(option, i) in options"
-        :key="i"
-        class="item"
-        @click="selectOption(option)">
-        {{ option.label }}
-      </li>
-    </ul>
+    <BaseDropDown :active="optionsToggled">
+      <ul class="dropdown-list">
+        <li
+          v-for="(option, i) in options"
+          :key="i"
+          class="list-item"
+          @click="selectOption(option)">
+          {{ option.label }}
+        </li>
+      </ul>
+    </BaseDropDown>
   </div>
 </template>
 
 <script>
+import BaseDropDown from '@/components/BaseDropDown.vue';
+
 export default {
+  components: {
+    BaseDropDown,
+  },
   props: {
     options: {
       type: Array,
@@ -81,7 +86,6 @@ export default {
     .current {
       &:before {
         transform: rotate(180deg);
-
       }
     }
   }
@@ -99,30 +103,11 @@ export default {
       margin-top: -3px;
       width: 12px;
       height: 8px;
-
       background: url('~@/assets/img/chevron-down.svg') right center no-repeat;
     }
 
   }
   .select_list {
-    position: absolute;
-    border-radius: $border-radius;
-    background: #fff;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100%;
-    box-shadow: $box-shadow;
-    top: 23px;
-    opacity: 0;
-    transition: all $transition-time;
-    visibility: hidden;
-    &.active {
-      top: 46px;
-      opacity: 1;
-      visibility: visible;
-    }
     .item {
       padding: 0.5rem 1rem;
       transition: background $transition-time;
