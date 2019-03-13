@@ -46,7 +46,7 @@ export default {
   justify-items: center;
   padding: 1.5rem 0;
   position: fixed;
-  width: 100px;
+  width: 80px;
   .main-nav {
     grid-area: nav;
     .nav-link {

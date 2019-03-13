@@ -29,7 +29,7 @@ export default {
 
 #app {
   .main {
-    padding-left: 100px;
+    padding-left: 80px;
   }
 }
 
