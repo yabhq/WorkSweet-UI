@@ -85,13 +85,6 @@ export default {
   .top-nav {
     display: flex;
     justify-content: space-between;
-    .notifications {
-      .notifications-toggler {
-      }
-    }
-    .profile-card {
-
-    }
   }
 }
 
