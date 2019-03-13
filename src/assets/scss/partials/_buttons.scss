@@ -1,0 +1,29 @@
+%base-btn {
+  border-radius: $border-radius;
+  background: $primary;
+  border: none;
+  color: $white;
+  font-family: $font;
+  cursor: pointer;
+  transition: opacity $transition-time;
+  &:hover,
+  &.active {
+    opacity: 0.8;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  @extend %base-btn;
+  height: 38px;
+  line-height: 38px;
+  font-size: 0.85rem;
+  padding: 0 1rem;
+  &.large {
+    height: 42px;
+    line-height: 42px;
+    font-size: 0.9rem;
+  }
+}

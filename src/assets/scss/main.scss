@@ -5,17 +5,31 @@
 @import 'partials/cards';
 @import 'partials/messages';
 @import 'partials/grid';
+@import 'partials/helpers';
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 html {font-size: 16px;}
 
 body {
+  background: #F8F9FB;
   font-family: $font;
   line-height: $line-height;
   margin: 0;
   padding: 0;
-  background: #F8F9FB;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
 }

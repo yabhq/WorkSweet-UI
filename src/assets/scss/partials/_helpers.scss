@@ -1,0 +1,8 @@
+.svg-ico {
+  fill: $secondary;
+  transition: fill $transition-time;
+  &:hover,
+  &.active {
+    fill: $primary
+  }
+}
