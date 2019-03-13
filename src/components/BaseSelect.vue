@@ -65,9 +65,10 @@ export default {
 
 <style lang="scss" scoped>
 .base_select {
-  cursor: pointer;
+  background: $white;
   border: 1px solid $neutral_3;
   border-radius: $border-radius;
+  cursor: pointer;
   display: block;
   height: 42px;
   font: 500 0.9rem / #{$line-height} #{$font};
