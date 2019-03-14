@@ -10,6 +10,14 @@
             <div class="card">
               <form>
                 <div class="form-group">
+                  <FormItem
+                    v-model="name"
+                    type="tel"
+                    :maxlength="10"
+                    label="Name"
+                    required="true"
+                    :error="true"
+                    placeholder="i.e John Doe" />
                   <label
                     class="form-item">
                     Name
@@ -57,13 +65,16 @@
 </template>
 
 <script>
+import FormItem from '@/components/FormItem.vue';
 import BaseSelect from '@/components/BaseSelect.vue';
 
 export default {
   components: {
+    FormItem,
     BaseSelect,
   },
   data: () => ({
+    name: null,
     country: 4,
     options: [
       {
