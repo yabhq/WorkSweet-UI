@@ -12,7 +12,7 @@
       <BaseButtonDropDown :value="demo.cta">
         <ul class="dropdown-list">
           <li class="list-item">
-            <a href @click.prevent="toggleBtnAction($event)">New T</a>
+            <a href @click.prevent="toggleBtnAction($event)">New Task</a>
           </li>
           <li class="list-item">
             <a href @click.prevent="toggleBtnAction($event)">New Issue</a>
@@ -58,6 +58,7 @@ export default {
 <style lang="scss" scoped>
 .top-header {
   background: $white;
+  border-bottom: 1px solid  $neutral_2;
   height: 60px;
   padding-left: 2rem;
   padding-right: 1rem;
