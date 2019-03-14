@@ -1,54 +1,56 @@
 <template>
-  <section class="comp-item">
+  <section class="page-section">
         <div class="row">
           <div class="col">
-            <h2 class="comp-subtitle">Form</h2>
+            <h2 class="page-title">Form</h2>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <form>
-              <div class="form-group">
-                <label
-                  class="form-item">
-                  Name
-                  <input
-                    type="text"
-                    placeholder="i.e John Doe">
-                </label>
-                <label
-                  class="form-item">
-                  Email address
-                  <input
-                    type="text"
-                    placeholder="i.e john@doe.com">
-                </label>
-              </div>
-              <div class="form-group">
-                <label
-                  class="form-item">
-                  Country
-                  <BaseSelect
-                    placeholder="Select your Country"
-                    :options="options" />
-                </label>
-                <label
-                  class="form-item">
-                  Email address
-                  <input
-                    type="text"
-                    placeholder="i.e john@doe.com">
-                </label>
-              </div>
-              <div class="form-group">
-                <label
-                  class="form-item">
-                  Message
-                  <textarea
-                    placeholder="Message" />
-                </label>
-              </div>
-            </form>
+            <div class="card">
+              <form>
+                <div class="form-group">
+                  <label
+                    class="form-item">
+                    Name
+                    <input
+                      type="text"
+                      placeholder="i.e John Doe">
+                  </label>
+                  <label
+                    class="form-item">
+                    Email address
+                    <input
+                      type="text"
+                      placeholder="i.e john@doe.com">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label
+                    class="form-item">
+                    Country
+                    <BaseSelect
+                      placeholder="Select your Country"
+                      :options="options" />
+                  </label>
+                  <label
+                    class="form-item">
+                    Email address
+                    <input
+                      type="text"
+                      placeholder="i.e john@doe.com">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label
+                    class="form-item">
+                    Message
+                    <textarea
+                      placeholder="Message" />
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
