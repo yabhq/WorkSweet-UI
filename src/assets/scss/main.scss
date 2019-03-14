@@ -23,8 +23,10 @@ body {
   line-height: $line-height;
   margin: 0;
   padding: 0;
+  overflow-y: scroll;
   &.no-scroll {
-    overflow: hidden
+    overflow: hidden;
+    margin-right: 15px;
   }
 }
 
